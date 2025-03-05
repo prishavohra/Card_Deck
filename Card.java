@@ -25,3 +25,9 @@ public class Card {
     public String toString() {
         return rank + " of " + suit;
     }
+
+    // Check if two cards have the same suit
+    public boolean sameSuit(Card other) {
+        return this.suit.equals(other.suit);
+    }
+
