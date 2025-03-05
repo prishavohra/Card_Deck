@@ -20,3 +20,8 @@ public class Card {
         return suit;
     }
 
+
+    // String representation of a card
+    public String toString() {
+        return rank + " of " + suit;
+    }
