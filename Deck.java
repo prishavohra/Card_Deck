@@ -38,3 +38,16 @@ public class Deck {
             System.out.println("Invalid index! Card does not exist.");
         }
     }
+
+    // Check if two cards belong to the same suit
+    public void sameCard(int index1, int index2) {
+        if (index1 >= 0 && index1 < deck.size() && index2 >= 0 && index2 < deck.size()) {
+            if (deck.get(index1).sameSuit(deck.get(index2))) {
+                System.out.println("The cards have the same suit.");
+            } else {
+                System.out.println("The cards have different suits.");
+            }
+        } else {
+            System.out.println("Invalid indices!");
+        }
+    }
