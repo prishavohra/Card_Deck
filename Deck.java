@@ -75,3 +75,12 @@ public class Deck {
         }
         System.out.println("Card not found in the deck.");
     }
+
+    // Deal 5 random cards from the deck
+    public void dealCard() {
+        shuffleDeck();
+        System.out.println("Dealing 5 random cards:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(deck.remove(0)); // Remove and print card
+        }
+    }
