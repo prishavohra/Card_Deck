@@ -51,3 +51,16 @@ public class Deck {
             System.out.println("Invalid indices!");
         }
     }
+
+    // Compare two cards by rank
+    public void compareCard(int index1, int index2) {
+        if (index1 >= 0 && index1 < deck.size() && index2 >= 0 && index2 < deck.size()) {
+            if (deck.get(index1).sameRank(deck.get(index2))) {
+                System.out.println("The cards have the same rank.");
+            } else {
+                System.out.println("The cards have different ranks.");
+            }
+        } else {
+            System.out.println("Invalid indices!");
+        }
+    }
